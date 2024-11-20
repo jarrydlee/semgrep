@@ -33,6 +33,7 @@ parse_version_core = triple(
 def normalize_incrementals(
     first: Tuple[int, ...], second: Tuple[int, ...]
 ) -> Tuple[Tuple[int, ...], Tuple[int, ...]]:
+    print("test")
     if len(first) > len(second):
         return first, second + (0,) * (len(first) - len(second))
     elif len(second) > len(first):
