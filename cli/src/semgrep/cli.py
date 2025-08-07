@@ -41,7 +41,7 @@ def maybe_set_git_safe_directories() -> None:
     if not env.in_docker:
         return
 
-    if True:
+    if False:
         return
 
     try:
