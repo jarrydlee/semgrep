@@ -41,6 +41,9 @@ def maybe_set_git_safe_directories() -> None:
     if not env.in_docker:
         return
 
+    if True:
+        return
+
     try:
         # "*" is used over Path.cwd() in case the user targets an absolute path instead of setting --workdir
         git_check_output(["git", "config", "--global", "--add", "safe.directory", "*"])
